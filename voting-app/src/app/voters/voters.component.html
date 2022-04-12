@@ -1,0 +1,23 @@
+<h2>Welcome Voters Page</h2>
+<table class="table table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Father Name</th>
+        <th>Gender</th>
+        <th>Aadhar#</th>
+        <th>Email</th>
+        <th>Phone#</th>  
+    </tr>
+    <tr *ngFor="let voter of voters">
+        <td>{{voter.id}}</td>
+        <td>{{voter.name}}</td>
+        <td>{{voter.age}}</td>
+        <td>{{voter.fatherName}}</td>
+        <td>{{voter.gender}}</td>
+        <td>{{voter.aadharNumber}}</td>
+        <td>{{voter.email}}</td>
+        <td>{{voter.phoneNumber}}</td>
+    </tr>
+</table>

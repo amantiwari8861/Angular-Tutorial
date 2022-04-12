@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <div id="signup-data">
+                    <div id="form-group">
+                        <label for="id">Id</label>
+                        <input type="number" id="id" class="form-control" ngModel name="id" required 
+                        #id="ngModel"
+                        >
+                        <span class="errors" *ngIf="!id.valid && id.touched">Enter a Valid Id</span>
+                    </div>
+                    <div id="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" ngModel name="name" required
+                        #name="ngModel"
+                        >
+                        <span class="errors" *ngIf="!name.valid && name.touched">Enter a Valid Name</span>
+                    </div>
+                    <div id="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" class="form-control" ngModel name="age">
+                    </div>
+                    <div id="form-group">
+                        <label for="fatherName">Father Name</label>
+                        <input type="text" id="fatherName" class="form-control" ngModel name="fatherName">
+                    </div>
+                    <div id="form-group">
+                        <label for="gender">Gender</label>
+                        <input type="text" id="gender" class="form-control" ngModel name="gender">
+                    </div>
+                    <div id="form-group">
+                        <label for="aadharNumber">Aadhar Number</label>
+                        <input type="number" id="aadharNumber" class="form-control" ngModel name="aadharNumber">
+                    </div>
+                    <div id="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" ngModel name="email">
+                    </div>
+                    <div id="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" id="phoneNumber" class="form-control" ngModel name="phoneNumber">
+                    </div>
+                    <div id="form-group">
+                        <button class="btn btn-primary" type="submit" [disabled]="!f.valid">SignUp</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+    "voters": [
+      {
+      "id": 101,
+      "name": "Mohit", 
+      "age": 21,
+      "fatherName": "Krishna",
+      "gender": "Male",
+      "aadharNumber": 123456789012,
+      "email": "mohit@gmail.com",
+      "phoneNumber": 9087123456
+      }
+    ]
+} 

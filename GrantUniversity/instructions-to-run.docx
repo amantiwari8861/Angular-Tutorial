@@ -1,0 +1,114 @@
+How to use 
+---------- 
+Run "npm install" inside this project folder to install all dependencies. 
+Make sure you use the latest version of the CLI (upgrade guide below) 
+Run "ng serve" or "npm start" to see the app in action (try "npm start" in case "ng serve" fails).
+
+
+How to upgrade the CLI
+-----------------------
+
+Run the below commands - only on Windows 
+
+npm uninstall -g @angular/cli 
+npm cache clean 
+npm install -g @angular/cli 
+
+Creating the REST API
+=======================
+
+1. First, you need to install json-server via npm by running the following command:
+	npm install -g json-server
+	
+	 This will install the package globally. You might need to use a CMD with administrator privileges in Windows in order to be able to install packages globally on your system without getting permission errors.
+	 
+2. Next, you need to create a JSON file, which will act as a database for our server. First, go to the angular-project folder.
+
+3. Next, create a server folder inside the angular-project folder and navigate to it:
+    $ mkdir server
+	$ cd server
+4. Next, create a database.json file inside the server folder
+5. Open the server/database.json file and add the following data:
+    
+	{
+  "courses": [
+    {
+      "id": 101,
+      "courseName": "Core Java",
+      "courseDuration": "52 Hours",
+      "courseEligibility": "Intermediate",
+      "courseFee": 9500
+    },
+    {
+      "id": 102,
+      "courseName": "J2EE",
+      "courseDuration": "48 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 1100
+    },
+    {
+      "id": 103,
+      "courseName": "Android",
+      "courseDuration": "50 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 7500
+    },
+    {
+      "id": 104,
+      "courseName": "Python",
+      "courseDuration": "60 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 12500
+    },
+    {
+      "id": 105,
+      "courseName": "Angular",
+      "courseDuration": "40 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 15000
+    },
+    {
+      "id": 106,
+      "courseName": "MySQL",
+      "courseDuration": "42 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 7000
+    },
+    {
+      "id": 107,
+      "courseName": "Spring",
+      "courseDuration": "110 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 13000
+    },
+    {
+      "id": 108,
+      "courseName": "MEAN Stack",
+      "courseDuration": "280 Hours",
+      "courseEligibility": "Graduates",
+      "courseFee": 65000
+    },
+    {
+      "id": 109,
+      "courseName": "DevOps with Java",
+      "courseDuration": "300 Hours",
+      "courseEligibility": "Graduates",
+      "courseFee": 80000
+    },
+    {
+      "id": 110,
+      "courseName": "PGP Java",
+      "courseDuration": "6 Months",
+      "courseEligibility": "Graduates",
+      "courseFee": "5000"
+    }
+  ]
+}
+
+6. Finally, run the API server by executing the below command:
+    json-server --watch database.json 
+    if want to change Port:
+    json-server --watch database.json --port 5000
+	
+	You can now send HTTP requests to the server just like any typical REST server.
+  Your RESTful server will be available from the http://127.0.0.1:3000/ and your JSON data will be available on the path http://127.0.0.1:3000/courses/

@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": 30423,
+      "empEmailId": "pankaj.saini@niit.com",
+      "password": "123456",
+      "empName": "Pankaj kumar Saini",
+      "empDepartment": "Training & Develipment",
+      "empLocation": "New Delhi",
+      "yearsOfExp": 9,
+      "studentTaught": 1200,
+      "managerId": 19463,
+      "dateOfJoining": "12/10/2015",
+      "role": "Admin"
+    },
+    {
+      "id": 30258,
+      "empEmailId": "rakesh.pandit@niit.com",
+      "password": "rakesh111",
+      "empName": "Rakesh Pandit",
+      "empDepartment": "Training & Development",
+      "empLocation": "Gurugram Haryana",
+      "yearsOfExp": 13,
+      "studentTaught": 1500,
+      "managerId": 23190,
+      "dateOfJoining": "1984-10-10",
+      "role": "Admin"
+    },
+    {
+      "id": 19463,
+      "empEmailId": "nidhi.sharma@niit.com",
+      "password": "password",
+      "empName": "Nidhi Sharma",
+      "empDepartment": "Training & Development",
+      "empLocation": "New Delhi, Preet Vihar",
+      "yearsOfExp": 12,
+      "studentTaught": 280,
+      "managerId": 17234,
+      "dateOfJoining": "1982-10-12",
+      "role": "Academic Leader"
+    },
+    {
+      "id": 1010,
+      "empEmailId": "aman@niit.com",
+      "password": "123456",
+      "empName": "Aman",
+      "empDepartment": "IT",
+      "empLocation": "Noida",
+      "yearsOfExp": 2,
+      "studentTaught": 102,
+      "managerId": 101,
+      "dateOfJoining": "1999-04-22",
+      "role": "Trainer"
+    }
+  ]
+}

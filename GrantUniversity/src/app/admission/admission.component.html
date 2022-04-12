@@ -1,0 +1,33 @@
+<div class="col-md-4">
+  <h2> Employee/User Details</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Email Id</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Location</th>
+      <th>Experience</th>
+      <th>Student Handled</th>
+      <th>Manager Id</th>
+      <th>Date of Joining</th>
+      <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.id}}</td>
+      <td>{{employee.empEmailId}}</td>
+      <td>{{employee.empName}}</td>
+      <td>{{employee.empDepartment}}</td>
+      <td>{{employee.empLocation}}</td>
+      <td>{{employee.yearsOfExp}}</td>
+      <td>{{employee.studentTaught}}</td>
+      <td>{{employee.managerId}}</td>
+      <td>{{employee.dateOfJoining}}</td>
+      <td>{{employee.role}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

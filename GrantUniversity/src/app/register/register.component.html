@@ -1,0 +1,76 @@
+<h2>Welcome To Registration Page</h2>
+<hr>
+<form [formGroup]="registerForm" novalidate class="form">
+    <div class="form-group">
+      <input type="number" formControlName="id" placeholder="Employee Id with max 8 digits" name="id" class="form-control" id="id">
+       <div *ngIf="submitted && registerForm.controls.id.errors" class="error" >
+          <div *ngIf="registerForm.controls.id.errors.required">Employee Id is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input type="email" email="true" formControlName="empEmailId" placeholder="Employee Email Id" name="empEmailId" class="form-control" id="empEmailId">
+       <div *ngIf="submitted && registerForm.controls.empEmailId.errors" class="error" >
+          <div *ngIf="registerForm.controls.empEmailId.errors.required">Employee Email Id is required</div>
+        </div>
+    </div>
+     <div class="form-group">
+      <input type="password" formControlName="password" placeholder="Enter password" name="password" class="form-control" id="password">
+       <div *ngIf="submitted && registerForm.controls.password.errors" class="error" >
+          <div *ngIf="registerForm.controls.password.errors.required">Employee Password Id is required</div>
+        </div>
+    </div>
+   <div class="form-group">
+      <input  formControlName="empName" placeholder="Enter Employee Name" name="empName" class="form-control" id="empName">
+       <div *ngIf="submitted && registerForm.controls.empName.errors" class="error" >
+          <div *ngIf="registerForm.controls.empName.errors.required">Employee Name is required</div>
+        </div>
+    </div>
+     <div class="form-group">
+      <input  formControlName="empDepartment" placeholder="Enter Employee Department" name="empDepartment" class="form-control" id="empDepartment">
+       <div *ngIf="submitted && registerForm.controls.empDepartment.errors" class="error" >
+          <div *ngIf="registerForm.controls.empDepartment.errors.required">Employee Department is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input  formControlName="empLocation" placeholder="Enter Employee Location" name="empLocation" class="form-control" id="empLocation">
+       <div *ngIf="submitted && registerForm.controls.empLocation.errors" class="error" >
+          <div *ngIf="registerForm.controls.empLocation.errors.required">Employee Location is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input type="number" formControlName="yearsOfExp" placeholder="Total Years of Experience" name="yearsOfExp" class="form-control" id="yearsOfExp">
+       <div *ngIf="submitted && registerForm.controls.yearsOfExp.errors" class="error" >
+          <div *ngIf="registerForm.controls.yearsOfExp.errors.required">Employee Years of Experience is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input type="number" formControlName="studentTaught" placeholder="Total Number of Students Hadelled" name="studentTaught" class="form-control" id="studentTaught">
+       <div *ngIf="submitted && registerForm.controls.studentTaught.errors" class="error" >
+          <div *ngIf="registerForm.controls.studentTaught.errors.required">Employee Years of Experience is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input type="number" formControlName="managerId" placeholder="Employee's Manager Id" name="managerId" class="form-control" id="managerId">
+       <div *ngIf="submitted && registerForm.controls.managerId.errors" class="error" >
+          <div *ngIf="registerForm.controls.managerId.errors.required">Employee's Manager Id  is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input type="date" formControlName="dateOfJoining" placeholder="Date of Joining" name="dateOfJoining" class="form-control" id="dateOfJoining">
+       <div *ngIf="submitted && registerForm.controls.dateOfJoining.errors" class="error" >
+          <div *ngIf="registerForm.controls.dateOfJoining.errors.required">Employee's Date of Joining is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+      <input formControlName="role" placeholder="Employee Role" name="role" class="form-control" id="role">
+       <div *ngIf="submitted && registerForm.controls.role.errors" class="error" >
+          <div *ngIf="registerForm.controls.role.errors.required">Employee's Role is required</div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="addEmployee()">Register</button>
+         <a [routerLink]="['/login']" class="btn btn-warning">Cancel</a>
+    </div>
+    
+</form>

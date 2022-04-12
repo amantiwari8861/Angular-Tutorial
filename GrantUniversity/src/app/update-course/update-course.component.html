@@ -1,0 +1,29 @@
+<div class="col-md-8">
+  <h2>Update Course Details</h2>
+  <form [formGroup]="editForm">
+    <div class="form-group">
+      <label for="id">Course Id:</label>
+      <input type="number" formControlName="id" placeholder="Course Id" name="id" class="form-control" id="id" >
+    </div>
+    <div class="form-group">
+      <label for="courseName">Course Name:</label>
+      <input formControlName="courseName" placeholder="Course Name" name="courseName" class="form-control" id="courseName">
+    </div>
+     <div class="form-group">
+      <label for="courseDuration">Course Duration:</label>
+      <input type="text" formControlName="courseDuration" placeholder="Course Duration" name="courseDuration" class="form-control" id="courseDuration">
+    </div>
+     <div class="form-group">
+      <label for="courseEligibility">Course Eligibility:</label>
+      <input type="text" formControlName="courseEligibility" placeholder="Course Eligibility" name="courseEligibility" class="form-control" id="courseEligibility">
+    </div>
+    <div class="form-group">
+      <label for="courseFee">Course Fee:</label>
+      <input type="text" formControlName="courseFee" placeholder="Course Fee" name="courseFee" class="form-control" id="courseFee">
+    </div>
+
+
+
+    <button class="btn btn-success" (click)="updateCourse()">Update Course</button>
+  </form>
+</div>

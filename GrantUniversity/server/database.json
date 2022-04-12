@@ -1,0 +1,25 @@
+{
+  "courses": [
+    {
+      "id": 101,
+      "courseName": "Python Programming",
+      "courseDuration": "60 Hours",
+      "courseEligibility": "Post Graduate",
+      "courseFee": "10000"
+    },
+    {
+      "id": 102,
+      "courseName": "J2EE",
+      "courseDuration": "48 Hours",
+      "courseEligibility": "Under Graduate",
+      "courseFee": 1100
+    },
+    {
+      "id": 20003,
+      "courseName": "Micro Services",
+      "courseDuration": "300 Hrs",
+      "courseEligibility": "Post Graduate",
+      "courseFee": "50000"
+    }
+  ]
+}

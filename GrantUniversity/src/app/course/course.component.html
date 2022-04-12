@@ -1,0 +1,29 @@
+<div>
+    <button class="btn btn-success" (click)="addCourse(course)">Add Course</button>
+</div>
+<div class="col-md-12">
+  <h2> Course Details</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Course Name</th>
+      <th>Course Duration</th>
+      <th>Course Eligibility</th>
+      <th>Course Fee</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let course of courses">
+      <td>{{course.id}}</td>
+      <td>{{course.courseName}}</td>
+      <td>{{course.courseDuration}}</td>
+      <td>{{course.courseEligibility}}</td>
+      <td>{{course.courseFee}}</td>
+      <td><button class="btn btn-danger" (click)="deleteCourse(course)"> Delete</button>
+        <button class="btn btn-primary" (click)="updateCourse(course)" style="margin-left: 20px;"> Update</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                <div id="signup-data">
+                    <div id="form-group">
+                        <label for="id">Id</label>
+                        <input type="number" id="id" class="form-control" formControlName="id">
+                        </div>
+                        <div id="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" formControlName="name">
+                        </div>
+                        <div id="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" class="form-control" formControlName="age">
+                        </div>
+                        <div id="form-group">
+                            <label for="fatherName">Father Name</label>
+                            <input type="text" id="fatherName" class="form-control" formControlName="fatherName">
+                        </div>
+                        <div id="form-group">
+                            <label for="gender">Gender</label>
+                            <input type="text" id="gender" class="form-control" formControlName="gender">
+                        </div>
+                        <div id="form-group">
+                            <label for="aadharNumber">Aadhar Number</label>
+                            <input type="number" id="aadharNumber" class="form-control" formControlName="aadharNumber">
+                        </div>
+                        <div id="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-control" formControlName="email">
+                        </div>
+                        <div id="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" id="phoneNumber" class="form-control" formControlName="phoneNumber">
+                        </div>
+                        <div id="form-group">
+                            <button class="btn btn-primary" type="submit">SignUp</button>
+                        </div>
+
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
